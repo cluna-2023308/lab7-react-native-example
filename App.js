@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // <-- Cambio aquí
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; 
 import Icon from 'react-native-vector-icons/Ionicons';
 
 function HomeScreen() {
@@ -29,14 +29,14 @@ function SettingsScreen() {
   );
 }
 
-const Tab = createBottomTabNavigator(); // <-- Ahora el bottom tabs
+const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={({ route }) => ({
-          headerShown: false,           // Oculta el header si no lo necesitas
+          headerShown: false,           
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
             if (route.name === 'Home') {
