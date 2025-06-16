@@ -48,7 +48,7 @@ export default function App() {
             }
             return <Icon name={iconName} size={size} color={color} />;
           },
-          tabBarActiveTintColor: 'tomato',   // Nuevas props en v6
+          tabBarActiveTintColor: 'tomato', 
           tabBarInactiveTintColor: 'gray',
         })}
       >
